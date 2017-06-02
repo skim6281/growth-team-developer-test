@@ -16,6 +16,6 @@ Thank you for applying to Teachable! Your goal with this test is to build an int
 
 1. A working example of this functionality (but with a completely different design) is available at https://stark-ravine-30041.herokuapp.com. Use this only to get a clearer idea of what the assignment is asking. Do not go looking for the code!
 
-2. If you use a Javascript framework, think about which one would be best for the task. Be prepared to defend your choice!
+2. If you use a Javascript framework, think about which one would be best for the task. Be prepared to defend your choice.
 
 3. For extra credit, make the pages responsive. There are no designs for this, it's up to you to decide how this should look. Bootstrap has been added to this rails project for you.
