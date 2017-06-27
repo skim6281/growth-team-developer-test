@@ -1,0 +1,23 @@
+{
+  "name": "growth-team-developer-test",
+  "version": "1.0.0",
+  "description": "Thank you for applying to Teachable! Your goal with this test is to build an interface that allows a user to search for ruby gems, and save their favorites.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skim6281/growth-team-developer-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/skim6281/growth-team-developer-test/issues"
+  },
+  "homepage": "https://github.com/skim6281/growth-team-developer-test#readme"
+}
