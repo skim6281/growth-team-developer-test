@@ -1,0 +1,37 @@
+.nav-container {
+  width: 532px;
+//  height: 100%;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  letter-spacing: .5px;
+}
+.map-container {
+  height: 100%;
+  position: relative;
+  ul {
+    position: absolute;
+    left: 390px;
+    top: 370px;
+    li {
+      display: block;
+      height: 50px;
+      width: 143px;
+      color: #fff;
+      font-size: 16px;
+      padding: 12px 20px;
+
+      &:hover {
+    //    background-color: #efefef;
+    //    opacity: .17;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.logo-container {
+  position: absolute;
+  width: 89px;
+  top: 44px;
+  left: 395px;
+}
