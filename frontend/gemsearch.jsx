@@ -3,6 +3,7 @@ import thunk from 'redux-thunk';
 import React from 'react';
 import ReactDom from 'react-dom';
 import Reducer from './reducer';
+import Root from './components/root';
 
 
 const configureStore = (preloadedState = {}) => (
