@@ -1,6 +1,6 @@
 class GemController < ApplicationController
-  require 'rubygems'
-  require 'gems'
+  # require 'rubygems'
+  # require 'gems'
 
   def show
     @gem = Gems.info params[:name]
