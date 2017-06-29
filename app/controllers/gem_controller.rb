@@ -10,13 +10,4 @@ class GemController < ApplicationController
       render json: ["No gem found"]
     end
   end
-
-  def dependencies
-    @gems = Gems.dependencies params[:name]
-    if @gems
-      render 'ruby_gems/dependencies'
-    else
-      render json: ["No dependencies"]
-    end
-  end
 end
