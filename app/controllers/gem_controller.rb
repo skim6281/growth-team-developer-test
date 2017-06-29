@@ -3,11 +3,11 @@ class GemController < ApplicationController
   require 'gems'
 
   def show
-    @gem = Gems.search params[:name]
+    @gem = Gems.info params[:name]
     if @gem
-      render 'ruby_gems/search'
+      render 'ruby_gems/show'
     else
-      render json; ["No gem found"]
+      render json: ["No gem found"]
     end
   end
 
