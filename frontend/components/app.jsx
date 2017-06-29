@@ -1,11 +1,19 @@
 import React from 'react';
+import Nav from './nav';
 
-export function App(prop) {
-  return (
-    <main>
-      <h1>Search</h1>
-    </main>
-  )
+class App extends React.Component {
+  render(){
+    return (
+      <main className="app-container">
+        <aside>
+          <Nav/>
+        </aside>
+        <content>
+          {this.props.children}
+        </content>
+      </main>
+    )
+  }
 }
 
 export default App;
