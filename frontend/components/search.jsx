@@ -9,7 +9,8 @@ class Search extends React.Component {
   render() {
     return (
       <content>
-        SearchComponent
+      <h1>  SearchComponent!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        </h1>
       </content>
     );
   }
