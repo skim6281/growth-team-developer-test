@@ -1,10 +1,12 @@
-const initialState = [];
+const initialState = {
+  gem: null
+}
 
 const Reducer = (state = initialState, action) => {
   Object.freeze(state);
   switch (action.type) {
     case 'RECEIVE_GEM':
-      return state.concat(action.gem);
+      return { gem: action.gem };
     default:
       return state;
   }
