@@ -9,22 +9,22 @@ class SearchBar extends React.Component {
       query: ""
     }
     this.update = this.update.bind(this);
-    this.submit = this.submit.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   update(e) {
     e.preventDefault();
-    this.setState({query: e.target.value});
+    this.setState({query: e.currentTarget.value});
   }
 
-  submit(e) {
+  handleSubmit(e) {
     e.preventDefault();
-    this.fetchGem(this.state.query);
+    this.props.fetchGem(this.state.query);
   }
 
   render() {
     return (
-      <form className='search-bar-container' onSubmit={this.submit}>
+      <form className='search-bar-container' onSubmit={this.handleSubmit}>
         <input
           className='search-input'
           placeholder='Search'
