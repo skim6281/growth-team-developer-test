@@ -19,7 +19,7 @@ class SearchBar extends React.Component {
 
   submit(e) {
     e.preventDefault();
-    this.fetchGem(thi.state.query);
+    this.fetchGem(this.state.query);
   }
 
   render() {
