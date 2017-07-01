@@ -8,7 +8,7 @@ class App extends React.Component {
         <aside>
           <Nav/>
         </aside>
-        <content>
+        <content className="content">
           {this.props.children}
         </content>
       </main>
