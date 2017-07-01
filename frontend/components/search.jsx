@@ -1,5 +1,6 @@
 import React from 'react';
 import SearchBar from './search_bar';
+import GemDetail from './gem_detail';
 
 class Search extends React.Component {
   constructor(props) {
@@ -11,6 +12,7 @@ class Search extends React.Component {
       <div>
         <h1 className="title">Search Gems</h1>
         <SearchBar/>
+        <GemDetail/>
       </div>
     );
   }
