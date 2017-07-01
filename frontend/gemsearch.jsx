@@ -5,7 +5,6 @@ import ReactDOM from 'react-dom';
 import Reducer from './reducer';
 import Root from './components/root';
 
-
 const configureStore = (preloadedState = {}) => (
   createStore(
     Reducer,
