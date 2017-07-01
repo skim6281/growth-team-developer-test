@@ -23,13 +23,18 @@ class SearchBar extends React.Component {
   }
 
   render() {
-    <form className='search-bar-container' onSubmit={this.submit}>
-      <input
-        className='search-input'
-        placeholder='Search'
-        onChange={this.update}
-        />
-    </form>
+    return (
+      <form className='search-bar-container' onSubmit={this.submit}>
+        <input
+          className='search-input'
+          placeholder='Search'
+          onChange={this.update}
+          />
+        <button className="search-button">
+          <img src={window.images.magnifyingGlass} />
+        </button>
+      </form>
+    )
   }
 }
 
