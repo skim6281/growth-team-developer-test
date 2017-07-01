@@ -8,10 +8,10 @@ class Search extends React.Component {
 
   render() {
     return (
-      <content>
-      <h1>  SearchComponent!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-        </h1>
-      </content>
+      <div>
+        <h1>Search Gems</h1>
+        <SearchBar/>
+      </div>
     );
   }
 
