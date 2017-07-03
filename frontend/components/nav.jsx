@@ -10,8 +10,8 @@ const Nav = props => {
           <img src={window.images.logo} />
         </div>
         <ul>
-          <li>Search</li>
-          <li>Favorites</li>
+          <li><Link className="link" to="/" >Search</Link></li>
+          <li><Link className="link" to="/favorites">Favorites</Link></li>
         </ul>
       </div>
     </aside>
