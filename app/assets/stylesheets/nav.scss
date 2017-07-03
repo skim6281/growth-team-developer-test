@@ -7,11 +7,12 @@
 .map-container {
   height: 100%;
   position: relative;
-  ul {
+  section {
     position: absolute;
     left: 390px;
-    top: 370px;
-    li {
+    top: 374px;
+    z-index: 2;
+    div {
       display: block;
       height: 50px;
       width: 143px;
@@ -24,6 +25,21 @@
       }
     }
   }
+}
+
+.bg{
+  z-index: 1;
+  position: absolute;
+  background-color: #fff;
+  opacity: .17;
+}
+
+.search-bg {
+  top: -5px;
+}
+
+.fave-bg {
+  top: 45px;
 }
 
 .link:hover {
