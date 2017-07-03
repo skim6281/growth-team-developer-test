@@ -7,13 +7,22 @@ class GemDetail extends React.Component {
     this.renderDependencies = this.renderDependencies.bind(this);
   }
 
+  renderGem(name) {
+    return (
+        <div className="gem-link">
+          <a href={`https://rubygems.org/gems/${name}`} target="_blank">{name}</a>
+          <img className="star" src={window.images.starGray}/>
+        </div>
+    )
+  }
+
   renderDependencies(gems) {
     if(gems.length === 0) {
       return (<span>None</span>);
     }
     return (
       <ul>
-        {gems.map((gem,index) => <li key={index}>{gem.name}</li>)}
+        {gems.map((gem,index) => <li key={index}>{this.renderGem(gem.name)}</li>)}
       </ul>
     )
   }
@@ -24,14 +33,14 @@ class GemDetail extends React.Component {
       return (
         <content>
           <div className="gem-name">
-            { gem.name }
+            { this.renderGem(gem.name) }
           </div>
           <div className="gem-info">
-            <h2>INFORMATION</h2>
-            { gem.info }
+            <div className="heading">INFORMATION</div>
+            <span>{ gem.info }</span>
           </div>
           <div>
-            <h2>DEPENDENCIES</h2>
+            <div className="heading">DEPENDENCIES</div>
             {this.renderDependencies(gem.dependencies)}
           </div>
         </content>
