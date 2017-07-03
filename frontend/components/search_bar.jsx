@@ -22,6 +22,20 @@ class SearchBar extends React.Component {
   }
 
   render() {
+    if(this.props.error) {
+      return (
+        <form className='search-bar-container red' onSubmit={this.handleSubmit}>
+          <input
+            className='search-input'
+            placeholder='Search'
+            value={this.state.query}
+            onChange={this.update} />
+          <button className="search-button" onClick={this.handleSubmit}>
+            <img src={window.images.magnifyingGlassRed} />
+          </button>
+        </form>
+      )
+    }
     return (
       <form className='search-bar-container' onSubmit={this.handleSubmit}>
         <input
@@ -37,6 +51,12 @@ class SearchBar extends React.Component {
   }
 }
 
+const mapStateToProps = state => {
+  return ({
+    error: state.gem.error
+  });
+};
+
 const mapDispatchToProps = dispatch => {
   return ({
     fetchGem: name => dispatch(fetchGem(name))
@@ -44,6 +64,6 @@ const mapDispatchToProps = dispatch => {
 };
 
 export default connect(
-  null,
+  mapStateToProps,
   mapDispatchToProps
 )(SearchBar);
