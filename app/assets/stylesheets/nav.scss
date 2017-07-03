@@ -18,14 +18,16 @@
       color: #fff;
       font-size: 18px;
       padding: 12px 20px;
-
       &:hover {
-    //    background-color: #efefef;
-    //    opacity: .17;
         cursor: pointer;
+        text-decoration: none;
       }
     }
   }
+}
+
+.link:hover {
+  text-decoration: none;
 }
 
 .logo-container {
