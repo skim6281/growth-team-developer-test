@@ -1,5 +1,5 @@
 const initialState = {
-  gem: null
+  gem: {}
 }
 
 const Reducer = (state = initialState, action) => {
