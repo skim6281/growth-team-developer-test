@@ -1,5 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { fetchFavorites } from '../action';
+import Gem from './gem';
 
 class GemDetail extends React.Component {
   constructor(props) {
@@ -7,13 +9,8 @@ class GemDetail extends React.Component {
     this.renderDependencies = this.renderDependencies.bind(this);
   }
 
-  renderGem(name) {
-    return (
-        <div className="gem-link">
-          <a href={`https://rubygems.org/gems/${name}`} target="_blank">{name}</a>
-          <img className="star" src={window.images.starGray}/>
-        </div>
-    )
+  componentDidMount() {
+    this.props.fetchFavorites();
   }
 
   renderDependencies(gems) {
@@ -22,18 +19,18 @@ class GemDetail extends React.Component {
     }
     return (
       <ul>
-        {gems.map((gem,index) => <li key={index}>{this.renderGem(gem.name)}</li>)}
+        {gems.map((gem,index) => <li key={index}><Gem name={gem.name} search={true}/></li>)}
       </ul>
     )
   }
 
   render() {
-    const { gem } = this.props;
+    const { gem} = this.props;
     if(gem) {
       return (
-        <content>
+        <section className="gem-detail-container">
           <div className="gem-name">
-            { this.renderGem(gem.name) }
+            <Gem name={gem.name} search={true}/>
           </div>
           <div className="gem-info">
             <div className="heading">INFORMATION</div>
@@ -43,25 +40,27 @@ class GemDetail extends React.Component {
             <div className="heading">DEPENDENCIES</div>
             {this.renderDependencies(gem.dependencies)}
           </div>
-        </content>
+        </section>
       )
     } else {
-      return(
-        <content>
-          <div>
-          </div>
-        </content>
-      )
+      return (<section></section>)
     }
   }
 }
 
 const mapStateToProps = state => {
   return ({
-    gem: state.gem
+    gem: state.gem.gem
+  });
+};
+
+const mapDispatchToProps = dispatch => {
+  return ({
+    fetchFavorites: () => dispatch(fetchFavorites())
   });
 };
 
 export default connect(
-  mapStateToProps
+  mapStateToProps,
+  mapDispatchToProps
 )(GemDetail);
