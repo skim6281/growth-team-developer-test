@@ -1,0 +1,10 @@
+.favorites-list {
+  max-height: 200px;
+  display: flex;
+  flex-direction: column;
+  flex-flow: wrap;
+}
+
+.fave-link {
+  margin: 15px 0;
+}
