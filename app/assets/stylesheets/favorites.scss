@@ -1,10 +1,25 @@
+.favorites-container {
+  width: 100%;
+}
+
 .favorites-list {
-  max-height: 200px;
+  height: 270px;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  flex-flow: wrap;
+  flex-wrap: wrap;
+  overflow-x: scroll;
 }
 
 .fave-link {
   margin: 15px 0;
+}
+
+.fave-gem {
+  width: 360px;
+}
+
+.fave-title {
+  font-size: 40px;
+  margin-bottom: 70px;
 }
