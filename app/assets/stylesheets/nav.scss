@@ -17,12 +17,9 @@
       height: 50px;
       width: 143px;
       color: #fff;
+      line-height: 13px;
       font-size: 18px;
       padding: 12px 20px;
-      &:hover {
-        cursor: pointer;
-        text-decoration: none;
-      }
     }
   }
 }
@@ -32,6 +29,10 @@
   position: absolute;
   background-color: #fff;
   opacity: .17;
+  &:hover {
+    cursor: pointer;
+    text-decoration: none;
+  }
 }
 
 .search-bg {
