@@ -3,7 +3,7 @@ class GemController < ApplicationController
   # require 'gems'
 
   def show
-    @gem = Gems.info params[:name]
+    @gem = Gems.info params[:name].downcase
     if @gem
       render 'ruby_gems/show'
     else
