@@ -9,7 +9,7 @@ class GemDetail extends React.Component {
 
   renderDependencies(gems) {
     if(gems.length === 0) {
-      return (None);
+      return (<span>None</span>);
     }
     return (
       <ul>
