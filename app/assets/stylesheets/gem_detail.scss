@@ -1,9 +1,7 @@
-
-.gem-link {
+.link {
   display: flex;
   line-height: 13px;
   font-size: 18px;
-  margin: 30px 0;
   a {
     color: #1F6BDE;
     &:hover {
@@ -11,6 +9,10 @@
       cursor: pointer;
     }
   }
+}
+
+.gem-link {
+  margin: 30px 0;
 }
 .gem-detail-container {
   margin-left: 50px;
