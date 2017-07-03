@@ -1,13 +1,12 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { fetchGem } from '../action.js';
+import { fetchGem } from '../action';
 
 class SearchBar extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      query: ""
-    }
+    this.state = { query: "" };
+    window.searchState = this.state;
     this.update = this.update.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
@@ -28,9 +27,9 @@ class SearchBar extends React.Component {
         <input
           className='search-input'
           placeholder='Search'
-          onChange={this.update}
-          />
-        <button className="search-button">
+          value={this.state.query}
+          onChange={this.update} />
+        <button className="search-button" onClick={this.handleSubmit}>
           <img src={window.images.magnifyingGlass} />
         </button>
       </form>
@@ -40,7 +39,7 @@ class SearchBar extends React.Component {
 
 const mapDispatchToProps = dispatch => {
   return ({
-    fetchGem: name => dispatch(fetchGem())
+    fetchGem: name => dispatch(fetchGem(name))
   });
 };
 
