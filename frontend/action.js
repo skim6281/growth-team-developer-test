@@ -34,9 +34,19 @@ export const removeFavorite = gemName => ({
   gemName
 });
 
+export const receiveError = error => {
+  console.log("error");
+  console.log(error);
+  return {
+    type: 'RECEIVE_ERROR',
+    error
+  }
+};
+
 export const fetchGem = name => dispatch => {
   return fetchRubyGem(name)
-    .then(gem => dispatch(receiveGem(gem)));
+    .then(gem => dispatch(receiveGem(gem)),
+      err => dispatch(receiveError(err)));
 };
 
 export const addFavorite = name => dispatch => {
