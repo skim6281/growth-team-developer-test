@@ -2,7 +2,7 @@ import { createStore, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Reducer from './reducer';
+import Reducer from './reducers/root_reducer';
 import Root from './components/root';
 import { fetchRubyGem, fetchGem, receiveGem } from './action';
 
