@@ -1,5 +1,6 @@
 const initialState = {
-  gem: null
+  gem: null,
+  error: null
 }
 
 const GemReducer = (state = initialState, action) => {
@@ -7,6 +8,8 @@ const GemReducer = (state = initialState, action) => {
   switch (action.type) {
     case 'RECEIVE_GEM':
       return { gem: action.gem };
+    case 'RECEIVE_ERROR':
+      return { error: "Oh no! Looks like that gem can't be found." };
     default:
       return state;
   }
