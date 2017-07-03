@@ -33,14 +33,14 @@ class Gem extends React.Component{
     const { name, search } = this.props;
     if(search) {
       return(
-        <div className="gem-link">
+        <div className="gem-link link">
           <a href={`https://rubygems.org/gems/${name}`} target="_blank">{name}</a>
           {this.renderStar(name)}
         </div>
       )
     } else {
       return(
-        <div className="gem-link">
+        <div className="fave-link link">
           {this.renderStar(name)}
           <a href={`https://rubygems.org/gems/${name}`} target="_blank">{name}</a>
         </div>
