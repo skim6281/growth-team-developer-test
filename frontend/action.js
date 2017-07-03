@@ -1,4 +1,4 @@
-const fetchRubyGem = name => {
+export const fetchRubyGem = name => {
   return $.ajax({
     method: 'GET',
     url: `/gem/${name}`
