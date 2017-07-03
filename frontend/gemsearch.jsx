@@ -4,6 +4,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Reducer from './reducer';
 import Root from './components/root';
+import { fetchRubyGem, fetchGem, receiveGem } from './action';
 
 const configureStore = (preloadedState = {}) => (
   createStore(
@@ -13,6 +14,9 @@ const configureStore = (preloadedState = {}) => (
   )
 );
 
+window.fetchRubyGem = fetchRubyGem;
+window.fetchGem = fetchGem;
+window.receiveGem = receiveGem;
 
 document.addEventListener('DOMContentLoaded', () => {
   const store = configureStore();
