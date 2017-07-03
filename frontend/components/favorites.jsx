@@ -15,7 +15,6 @@ class Favorites extends React.Component {
 
   renderFavorites() {
     const { favorites } = this.props;
-    console.log(favorites);
     return favorites.map((name, index) => {
       return(
         <div className="fave-gem" key={index}>
