@@ -16,12 +16,10 @@ class GemDetail extends React.Component {
         {gems.map((gem,index) => <li key={index}>{gem.name}</li>)}
       </ul>
     )
-
   }
 
   render() {
     const { gem } = this.props;
-    console.log("gem: "+gem);
     if(gem) {
       return (
         <content>
