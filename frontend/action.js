@@ -35,8 +35,6 @@ export const removeFavorite = gemName => ({
 });
 
 export const receiveError = error => {
-  console.log("error");
-  console.log(error);
   return {
     type: 'RECEIVE_ERROR',
     error
