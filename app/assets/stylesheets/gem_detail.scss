@@ -1,0 +1,32 @@
+.gem-link {
+  display: flex;
+  line-height: 13px;
+  font-size: 18px;
+  margin: 40px 0;
+  a {
+    color: #1F6BDE;
+    &:hover {
+      color: #1F6BDE;
+    }
+  }
+}
+
+.star {
+  width: 15px;
+  height: 15px;
+  margin: 0 7px;
+}
+
+.heading {
+  font-size: 15px;
+  margin: 10px 0;
+}
+
+.gem-info {
+  margin-bottom: 30px;
+}
+
+span {
+  color: #8E8E8E;
+  font-size: 15px;
+}
