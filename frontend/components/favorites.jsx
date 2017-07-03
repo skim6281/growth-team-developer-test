@@ -18,7 +18,7 @@ class Favorites extends React.Component {
     console.log(favorites);
     return favorites.map((name, index) => {
       return(
-        <div key={index}>
+        <div className="fave-gem" key={index}>
           <Gem name={name}/>
         </div>
       )
@@ -27,11 +27,11 @@ class Favorites extends React.Component {
 
   render() {
     return (
-      <section>
+      <section className="favorites-container">
         <h1 className="fave-title">Your Favorite Gems</h1>
-        <section className="favorites-list">
+        <div className="favorites-list">
           {this.renderFavorites()}
-        </section>
+        </div>
       </section>
     )
   }
