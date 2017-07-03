@@ -1,8 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Nav = props => {
   return (
-    <section className="nav-container">
+    <aside className="nav-container">
       <div className="map-container">
         <img src={window.images.map} />
         <div className="logo-container">
@@ -13,7 +14,7 @@ const Nav = props => {
           <li>Favorites</li>
         </ul>
       </div>
-    </section>
+    </aside>
   )
 }
 
