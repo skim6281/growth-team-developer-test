@@ -1,6 +1,6 @@
 .search-bar-container {
   border: 1px solid #5F5F5F;
-  font-size: 16px;
+  font-size: 18px;
   color: #5F5F5F;
   border-radius: 100px;
   width: 90%;
@@ -9,6 +9,9 @@
   display: flex;
   justify-content: space-between;
   padding: 0 50px;
+  input {
+    width: 100%;
+  }
 }
 
 .search-button {
