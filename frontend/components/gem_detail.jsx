@@ -25,7 +25,7 @@ class GemDetail extends React.Component {
   }
 
   render() {
-    const { gem} = this.props;
+    const { gem,error } = this.props;
     if(gem) {
       return (
         <section className="gem-detail-container">
@@ -41,16 +41,19 @@ class GemDetail extends React.Component {
             {this.renderDependencies(gem.dependencies)}
           </div>
         </section>
-      )
+      );
+    } else if(error){
+      return (<section className="error">{ error }</section>);
     } else {
-      return (<section></section>)
+        return (<section></section>);
     }
   }
 }
 
 const mapStateToProps = state => {
   return ({
-    gem: state.gem.gem
+    gem: state.gem.gem,
+    error: state.gem.error
   });
 };
 
