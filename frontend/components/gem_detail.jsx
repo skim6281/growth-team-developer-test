@@ -29,9 +29,11 @@ class GemDetail extends React.Component {
             { gem.name }
           </div>
           <div className="gem-info">
+            <h2>INFORMATION</h2>
             { gem.info }
           </div>
           <div>
+            <h2>DEPENDENCIES</h2>
             {this.renderDependencies(gem.dependencies)}
           </div>
         </content>
@@ -40,13 +42,11 @@ class GemDetail extends React.Component {
       return(
         <content>
           <div>
-            No gem found
           </div>
         </content>
       )
     }
   }
-
 }
 
 const mapStateToProps = state => {
