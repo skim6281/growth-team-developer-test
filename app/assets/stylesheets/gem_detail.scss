@@ -44,4 +44,11 @@ span {
   margin: 15px 0 0 145px;
   color: #FF4F4F;
   font-size: 24px;
+  width: 75%;
+}
+
+@media (max-width: 1380px) {
+  .error {
+    margin-left: 50px;
+  }
 }

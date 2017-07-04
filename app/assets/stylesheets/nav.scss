@@ -55,3 +55,15 @@
   top: 44px;
   left: 395px;
 }
+
+@media (max-width: 1000px) {
+  .nav-container {
+    left: -390px;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav-container{
+    visibility: hidden;
+  }
+}

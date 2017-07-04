@@ -11,3 +11,15 @@
   letter-spacing: 1px;
   padding-left: 648px;
 }
+
+@media (max-width: 1000px) {
+  .content{
+    padding-left: 258px;
+  }
+}
+
+@media (max-width: 600px) {
+  .content {
+    padding-left: 50px;
+  }
+}
