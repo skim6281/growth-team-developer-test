@@ -6,4 +6,4 @@
   npm install
   be rails s
   ```
-  go to `localhost:3000`
+- Go to `localhost:3000`
