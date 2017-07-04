@@ -1,7 +1,7 @@
 import React from 'react';
 import { Provider } from 'react-redux';
-import { Router, IndexRoute, Switch } from 'react-router';
-import { BrowserRouter, HashRouter, Route } from 'react-router-dom';
+import { Switch } from 'react-router';
+import { HashRouter, Route } from 'react-router-dom';
 import App from './app';
 import Search from './search';
 import Favorites from './favorites';
