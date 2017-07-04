@@ -1,5 +1,5 @@
 ## Live
-`https://teachable-test-sam.herokuapp.com`
+[https://teachable-test-sam.herokuapp.com](https://teachable-test-sam.herokuapp.com)
 
 ## Usage
 - Setup
@@ -9,4 +9,4 @@
   npm install
   bundle exec rails s
   ```
-- Go to `localhost:3000`
+- Go to [localhost:3000](localhost:3000)
