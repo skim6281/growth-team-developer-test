@@ -24,10 +24,10 @@ class SearchBar extends React.Component {
   render() {
     if(this.props.error) {
       return (
-        <form className='search-bar-container red' onSubmit={this.handleSubmit}>
+        <form className="search-bar-container red" onSubmit={this.handleSubmit}>
           <input
-            className='search-input'
-            placeholder='Search'
+            className="search-input"
+            placeholder="Search"
             value={this.state.query}
             onChange={this.update} />
           <button className="search-button" onClick={this.handleSubmit}>
@@ -37,10 +37,10 @@ class SearchBar extends React.Component {
       )
     }
     return (
-      <form className='search-bar-container' onSubmit={this.handleSubmit}>
+      <form className="search-bar-container" onSubmit={this.handleSubmit}>
         <input
-          className='search-input'
-          placeholder='Search'
+          className="search-input"
+          placeholder="Search"
           value={this.state.query}
           onChange={this.update} />
         <button className="search-button" onClick={this.handleSubmit}>
