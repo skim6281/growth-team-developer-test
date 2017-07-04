@@ -1,5 +1,5 @@
 import React from 'react';
-import { deleteFavorite, fetchFavorites } from '../action';
+import { fetchFavorites } from '../action';
 import { connect } from 'react-redux';
 import Gem from './gem';
 
@@ -44,7 +44,6 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
   return ({
-    deleteFavorite: gemName => dispatch(deleteFavorite(gemName)),
     fetchFavorites: () => dispatch(fetchFavorites())
   });
 }
