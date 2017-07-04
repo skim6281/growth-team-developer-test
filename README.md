@@ -10,3 +10,7 @@
   bundle exec rails s
   ```
 - Go to [localhost:3000](localhost:3000)
+
+## Notes
+I decided to use React for component reusability.
+Ex: Each gem link and star are under a Gem component.  The Gem component is used in both the root and favorites page.
