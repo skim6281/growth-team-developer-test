@@ -13,4 +13,4 @@
 
 ## Notes
 I decided to use React for component reusability.
-Ex: Every gem link and star pairs are each under a Gem component.  The Gem component is used in both the root and favorites page.
+Ex: Every gem link and star pair is each under a Gem component.  The Gem component is used in both the root and favorites page.
